@@ -1,0 +1,41 @@
+SEED Encryption and Decryption Program
+
+* VERSION HISTORY
+  1.0 : 2015.06.04
+  1.1 : 2015.06.06
+
+* CONTENTS
+  seed.c
+  KISA_SEED_CBC.c
+  KISA_SEED_CBC.h
+  Makefile
+  key.dat
+  Readme
+  ChangeLog
+
+* KEY FILE FORMAT
+  Sample file : key.dat
+  16 byte key with one byte per line in hex format(Ox??)
+
+* CHANGE ENDIAN
+  KISA_SEED_CBC.c line 8
+
+* BUILD
+  make clean
+  make
+
+* RUN PROGRAM
+  ./seed [option...]
+
+* OPTIONS
+  -h           : Help message
+  -s           : Silent mode
+  -v           : Verbose mode
+  -p string    : Encrypt PlainText string
+  -c string    : Decrypt CipherText string
+  -K string    : Use key string
+  -k file_name : Use key file
+  -e file_name : Encrypt PlainText file
+  -d file_name : Decrypt CipherText file
+  -o file_name : Output by file_name
+

@@ -1,0 +1,18 @@
+[Version 1.0 : 2015.06.04]
+* Initial Version
+
+[Version 1.1 : 2015.06.06]
+* Change Default ENDIAN
+WINDOWS Compile : BIG ENDIAN    ==> LITTLE ENDIAN
+LINUX Compile   : LITTLE ENDIAN ==> BIG ENDIAN
+
+* Change Default Output Filename
+-p file_name : Encrypted_file_name ==> file_name.en
+-d file_name : Decrypted_file_name ==> file_name.de
+
+* Add Verbose Mode Print
+-vK string   : Input Key String : string
+
+* Add Version String
+* Add ChangeLog file
+* Add Readme file
